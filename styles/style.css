@@ -17,4 +17,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font), 'Roboto';
+  background-color: var(--background-color);
+  color:var(--accent-color);
 }

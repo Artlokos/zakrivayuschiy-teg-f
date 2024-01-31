@@ -1,0 +1,4 @@
+{
+    "vscode-edge-devtools.headless": true,
+    "vscode-edge-devtools.browserFlavor": "Stable"
+}
