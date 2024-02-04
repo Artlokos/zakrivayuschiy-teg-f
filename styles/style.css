@@ -14,8 +14,8 @@
 
 */
 @import 'variables.css';
+
 .page {
-  /* position: relative; */
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -30,7 +30,6 @@
   background-size: cover;
   background-attachment: fixed;
   background-image: var(--background-image);
-  
 }
 
 .header {
@@ -96,12 +95,13 @@ line-height: 14px;
   position: relative;
   background-color: var(--background-color);
   font-family: var(--main-font);
-  border: 2px solid var(--accent-color);
+  outline: 2px solid var(--accent-color);
 }
 
 .card-section img {
   position: relative;
-  border: 2px solid var(--accent-color);
+  max-width: 371px;
+  outline: 2px solid var(--accent-color);
 }
 
 .card-title {
@@ -116,25 +116,23 @@ line-height: 14px;
   padding:25px;
 }
 
-.card-watermark {
-  position: absolute;
-  z-index: 1;
-font-family: var(--accent-font);
-color: var();
-font-size: 14px;
-font-weight: 400;
-line-height: 14px;
-letter-spacing: 0em;
-width: 98px;
-height: 14px;
-left: 264px;
-top: 79px;
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 14px;
-text-transform: uppercase;
-mix-blend-mode: hard-light;
-opacity: 0.5;
-border: 1px solid #000000;
-}
+@supports((text-stroke: 1px var(--border-color)) or (-webkit-text-stroke: var(--border-color))) {
+  .card-watermark {
+    position: absolute;
+    z-index: 1;
+    font-family: var(--accent-font);
+    letter-spacing: 0em;
+    width: 98px;
+    height: 14px;
+    left: 264px;
+    top: 79px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    mix-blend-mode: hard-light;
+    opacity: 0.5;
+    -webkit-text-stroke: 1px var(--border-color);
+  }
+} 

@@ -14,6 +14,7 @@
     --gradient-color__lighting: rgba(0,127,12,1);
     --gradient-color__darking:rgba(0,67,6,1);
     --gradient-stroke__color:rgba(0,0,0,1);
+    --border-color:rgba(0, 0, 0, 1);
     --font-weight-header: 785;
     --font-weight-content:465;
 }
@@ -25,6 +26,7 @@
     --gradient-color__lighting: rgba(231,231,231,1);
     --gradient-color__darking:rgba(26,26,26,1);
     --gradient-stroke__color:rgba(211,211,211,1);
+    --border-color:rgba(255, 255, 255, 1);
     --font-weight-header: 700;
     --font-weight-content:400;
 }
@@ -38,13 +40,14 @@
         --gradient-color__lighting: rgba(0,127,12,1);
         --gradient-color__darking:rgba(0,67,6,1);
         --gradient-stroke__color:rgba(0,0,0,1);
+        --border-color:rgba(0, 0, 0, 1);
         --font-weight-header: 785;
         --font-weight-content:465;
     }
   }
 
   @media (prefers-color-scheme: light) {
-    :root {  
+    :root {
         --main-font: 'Inter-Variable';
         --accent-font: 'PressStart2P';
         --background-color:rgba(255, 255, 255, 1);
@@ -52,6 +55,7 @@
         --gradient-color__lighting: rgba(231,231,231,1);
         --gradient-color__darking:rgba(26,26,26,1);
         --gradient-stroke__color:rgba(211,211,211,1);
+        --border-color:rgba(255, 255, 255, 1);
         --font-weight-header: 700;
         --font-weight-content:400;
     }
