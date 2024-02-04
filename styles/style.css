@@ -25,10 +25,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-image: 
-  repeating-linear-gradient(0deg,#d3d3d3, transparent 2px),
-  repeating-linear-gradient(90deg,#d3d3d3, transparent 2px),
-  linear-gradient(#e7e7e7,#1a1a1a)
+  background-image: var(--background-image);
+  
 }
 
 .header {

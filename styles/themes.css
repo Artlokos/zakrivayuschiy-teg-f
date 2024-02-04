@@ -11,6 +11,9 @@
     --accent-font: 'PressStart2P';
     --background-color:rgba(0, 0, 0, 1);
     --accent-color:rgba(0, 204, 20, 1);
+    --gradient-color__lighting: rgba(0,127,12,1);
+    --gradient-color__darking:rgba(0,67,6,1);
+    --gradient-stroke__color:rgba(0,0,0,1);
     --font-weight-header: 785;
     --font-weight-content:465;
 }
@@ -19,6 +22,9 @@
     --accent-font: 'PressStart2P';
     --background-color:rgba(255, 255, 255, 1);
     --accent-color:rgba(0, 0, 0, 1);
+    --gradient-color__lighting: rgba(231,231,231,1);
+    --gradient-color__darking:rgba(26,26,26,1);
+    --gradient-stroke__color:rgba(211,211,211,1);
     --font-weight-header: 700;
     --font-weight-content:400;
 }
@@ -29,6 +35,9 @@
         --accent-font: 'PressStart2P';
         --background-color:rgba(0, 0, 0, 1);
         --accent-color:rgba(0, 204, 20, 1);
+        --gradient-color__lighting: rgba(0,127,12,1);
+        --gradient-color__darking:rgba(0,67,6,1);
+        --gradient-stroke__color:rgba(0,0,0,1);
         --font-weight-header: 785;
         --font-weight-content:465;
     }
@@ -40,6 +49,9 @@
         --accent-font: 'PressStart2P';
         --background-color:rgba(255, 255, 255, 1);
         --accent-color:rgba(0, 0, 0, 1);
+        --gradient-color__lighting: rgba(231,231,231,1);
+        --gradient-color__darking:rgba(26,26,26,1);
+        --gradient-stroke__color:rgba(211,211,211,1);
         --font-weight-header: 700;
         --font-weight-content:400;
     }

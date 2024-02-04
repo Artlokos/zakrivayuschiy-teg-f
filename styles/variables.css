@@ -1,8 +1,12 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+@import 'themes.css';
 :root {
     --main-font:'Inter-Variable';
     --accent-font:'PressStart2P';
-    --background-color:rgba(255, 255, 255, 1);
-    --accent-color:rgba(0, 0, 0, 1);
+    --background-color:var(--background-color);
+    --accent-color:var(--accent-color);
     --background-image:
+    repeating-linear-gradient(0deg,var(--gradient-stroke__color), transparent 2px),
+    repeating-linear-gradient(90deg,var(--gradient-stroke__color), transparent 2px),
+    linear-gradient(var(--gradient-color__lighting) 0.01%, var(--gradient-color__darking));
 }
