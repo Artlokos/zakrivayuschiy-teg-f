@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+ html{
+  сolor-scheme: light dark;
+ }
+
 body {
   margin: 0;
 }

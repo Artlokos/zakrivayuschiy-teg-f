@@ -13,11 +13,80 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 
 */
-
+@import 'variables.css';
 .page {
+  position: relative;
+  max-width: 371px;
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font), 'Roboto';
   background-color: var(--background-color);
   color:var(--accent-color);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: 
+  repeating-linear-gradient(0deg,#d3d3d3, transparent 2px),
+  repeating-linear-gradient(90deg,#d3d3d3, transparent 2px),
+  linear-gradient(#e7e7e7,#1a1a1a)
 }
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--accent-color);
+  background-color: var(--background-color);
+  margin-block-start: 120px;
+}
+
+.logo-group {
+display: flex;
+flex-direction: column;
+align-items: center;
+min-width: 343px;
+max-height: 83px;
+margin-block-start: 120px;
+gap: 20px;
+}
+
+.header * {
+  font-family: var(--accent-font);
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.header__title-text {
+  font-size: 49px;
+  line-height: 49px;
+}
+
+.header__subtitle-text {
+font-size: 14px;
+line-height: 14px;
+}
+
+.theme-menu__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-block-end: 25px;
+}
+
+.header__theme-menu {
+  display: flex;
+  flex-direction: column;
+  margin-block-start: 25px;
+  gap: 14px;
+}
+
+.theme-menu__button {
+  background-color: transparent;
+}
+
+
