@@ -6,7 +6,10 @@
     --background-color:var(--background-color);
     --accent-color:var(--accent-color);
     --background-image:
+            linear-gradient(var(--gradient-color__lighting) 0.01%, var(--gradient-color__darking)),
             repeating-linear-gradient(0deg,var(--gradient-stroke__color) 2px, transparent 2px),
-            repeating-linear-gradient(90deg,var(--gradient-stroke__color) 2px, transparent 2px),
-            linear-gradient(var(--gradient-color__lighting) 0.01%, var(--gradient-color__darking));
-}
+            repeating-linear-gradient(90deg,var(--gradient-stroke__color) 2px, transparent 2px);
+            
+    --width-desktop:696px;
+    --width-mobile:375px;
+        }
