@@ -24,6 +24,10 @@
   min-block-size: 100dvb;
   font-family: var(--main-font), 'Roboto';
   background-color: var(--background-color);
+  background-image: 
+  repeating-linear-gradient(0deg, var(--gradient__color-stroke) 0.01%, transparent 2px),
+  repeating-linear-gradient(90deg, var(--gradient__color-stroke) 0.01%, transparent 2px), 
+  linear-gradient(var(--gradient-color__lighting) 0%, var(--gradient-color__darking) 100%);
   color:var(--accent-color);
   background-repeat: no-repeat;
   background-size: cover;
@@ -42,13 +46,11 @@
   width: clamp(371px,696px);
   align-items: center;
   border: 2px solid var(--accent-color);
-  /* background-color: linear-gradient(var(--gradient-color__lighting) 0.01%, var(--gradient-color__darking)); */
-            /* repeating-linear-gradient(0deg,var(--gradient-stroke__color) 2px, transparent 2px), */
-            /* repeating-linear-gradient(90deg,var(--gradient-stroke__color) 2px, transparent 2px); */
-  /* margin-block-start: 100px; */
+  background-color:var(--background-color); 
+  margin-block-start: 100px; 
 }
 
-.heder::before {
+.header::before {
 
   
 }
@@ -104,11 +106,13 @@
 
 .theme-menu__button:hover {
   color:var(--color-for__menu__header__hover);
+  opacity: 0.6;
   cursor: pointer;
 }
 
 .theme-menu__button:focus {
   outline: none ;
+  text-decoration: underline; 
 }
 
 .theme-menu__button:disabled::before {
@@ -132,7 +136,7 @@
 
 .card-section {
   width: clamp(var(--width-mobile),var(--width-desktop));
-  /* background-color: var(--background-color); */
+  background-color: var(--background-color);
   font-family: var(--main-font);
   outline: 2px solid var(--accent-color);
 }
@@ -223,7 +227,7 @@ font-weight: 400;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
-  background-color: transparent;
+  background-color: var(--background-color);
   outline: 2px solid var(--accent-color);
 }
 
