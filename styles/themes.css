@@ -17,6 +17,7 @@
     --border-color:rgba(0, 0, 0, 1);
     --font-weight-header: 785;
     --font-weight-content:465;
+    --color-for__menu__header__hover:rgba(0,127,12,1);
 }
 :root.theme-light {
     --main-font: 'Inter-Variable';
@@ -29,6 +30,7 @@
     --border-color:rgba(255, 255, 255, 1);
     --font-weight-header: 700;
     --font-weight-content:400;
+    --color-for__menu__header__hover:rgba(211,211,211,1);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -43,6 +45,7 @@
         --border-color:rgba(0, 0, 0, 1);
         --font-weight-header: 785;
         --font-weight-content:465;
+        --color-for__menu__header__hover:rgba(0,127,12,1);
     }
   }
 
@@ -58,5 +61,6 @@
         --border-color:rgba(255, 255, 255, 1);
         --font-weight-header: 700;
         --font-weight-content:400;
+        --color-for__menu__header__hover:rgba(211,211,211,1);
     }
   }
