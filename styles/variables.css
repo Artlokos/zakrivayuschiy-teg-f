@@ -14,4 +14,15 @@
             
     --width-desktop:700px;
     --width-mobile:375px;
+
+    --sparks-fill-color: #f00;
+    --sparks-fill-color-tr: rgb(255 0 0 / 0%);
+    --contour-color: rgb(0 0 0);
+    --core-color: rgb(0 0 0);
+    --core-color-tr: rgb(0 0 0 / 0%);
+    --main-body-color: rgb(0 0 0);
+    --main-body-color-tr: rgb(0 0 0 / 0%);
+    --contour-active-color: #f00;
+    --core-active-color: #f00;
+    --main-body-active-color: #f00;
         }

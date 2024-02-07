@@ -17,7 +17,7 @@
   <body class="page">
     <header class="header">
       <div class="logo-group">
-      <h1 class="header__title-text">&lt;/HTML&gt;</h1>
+      <h1 class="header__title-text" aria-hidden="true">&lt;/HTML&gt;</h1>
       <h2 class="header__subtitle-text">Закрывающий тег</h2>
     </div>
       <nav class="theme-menu header__theme-menu">
@@ -54,14 +54,14 @@
         
         <h3 class="card-title">Фритрек и нулевой спринт: Подготовка к работе</h3>
         <div class="img-container">
-          <img src="./images/sprint0.png" alt="Sprint0"/>
+          <img class="card-img" src="./images/sprint0.png" alt="Sprint0"/>
           <p class="card-watermark">&lt;/HTML&gt;</p>
         </div>
         
         <p class="card-content">Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.</p>
         <p class="card-content">Место для ваших воспоминаний о начале обучения.</p>
-        <span class="heart__and__button-like">
-          <button class="card__like-icon">
+        <div class="heart__and__button-like">
+          <button class="card__icon-button">
             <svg  width="27" height="24" 
                   viewBox="0 0 27 24" 
                   fill="currentColor" 
@@ -90,8 +90,10 @@
             <path d="M15 21H12V24H15V21Z" fill="black"/>
           </svg>
         </button>
-          <button class="card__like-button">Like</button>
-        </span>
+          <button class="card__like-button simple-button">
+            <span class="button__text">Like</span>
+          </button>
+        </div>
       </div>
 
       </section>
@@ -103,7 +105,7 @@
         <svg width="21" height="21">
           <use href="./svg/floppy.svg#floppy">
         </svg>
-        Сохранить на память
+        <span class="button__text">Сохранить на память</span>
       </button>
 
     </footer>
