@@ -101,14 +101,26 @@
     </main>
  
     <footer class="footer__container">
-      <button class="button-save">
-        <svg width="21" height="21">
+      <button class="button-save simple-button" type="button" aria-controls="dialog" onclick="window['dialog'].showModal()">
+        <svg width="21" height="21" class="footer__floppy">
           <use href="./svg/floppy.svg#floppy">
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
 
     </footer>
+
+    <dialog class="dialog" id="dialog">
+      <form class="dialog__form" method="dialog">
+        <svg class="dialog__image" viewBox="0 0 39 39">
+          <use href="./svg/floppy.svg#floppy"/>
+        </svg>
+        <p class="dialog__text">вставьте дискету, чтобы продолжить</p> 
+        <button class="dialog__button simple-button" type="submit">
+          <span class="button__text">ok</span>
+        </button>
+      </form>
+    </dialog>
     <script src="./scripts/like.js"></script>
   </body>
 

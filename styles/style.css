@@ -315,12 +315,55 @@ font-weight: 400;
 
 }
 
+.simple-button {
+  position:relative;
+  border: 2px solid var(--accent-color);
+  transition: box-shadow 0.3s;
+  transition-timing-function: ease;
+}
+
+.simple-button:focus {
+  outline: none;
+}
+
+.simple-button:focus-visible {
+  box-shadow: 2px 2px 0 2px var(--accent-color);
+}
+
+.simple-button::before {
+  content: "";
+  position: absolute;
+  inset:0;
+  z-index: 1;
+  background-color: var(--accent-color);
+  transition: transform 0.5s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.simple-button:hover::before {
+  transform: scaleX(1);
+}
+
+.button__text {
+  position: relative;
+  z-index: 2;
+  display: block;
+  color:var(--background-color);
+  font-family: var(--accent-font),sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 90%;
+  mix-blend-mode: difference;
+}
+
 .footer__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .button-save {
   width: 335px;
   height: 55px;
@@ -333,4 +376,106 @@ font-weight: 400;
   outline: 2px solid var(--accent-color);
 }
 
+.button-save:focus {
+  outline: none;
+}
 
+.footer__floppy {
+  position: relative;
+  z-index: 2;
+  color:var(--background-color);
+  block-size: 28px;
+  inline-size: auto;
+  mix-blend-mode: difference;
+}
+
+.dialog {
+  position: fixed;
+  inset: 0;
+  border: 2px solid var(--accent-color);
+  padding: 32px 42px;
+  color:var(--accent-color);
+  font-family: var(--accent-font), sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+  background-color: var(--background-color);
+  transition: opacity 0.3s ease-in-out;
+  max-inline-size: 343px;
+}
+
+.dialog__form {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  grid-template-rows: 1fr fit-content;
+  row-gap: 30px;
+}
+
+.dialog__button {
+  grid-column: 1 / 3;
+  grid-row: 2;
+  padding: 9px 0;
+  text-transform: uppercase;
+  background-color: var(--background-color);
+}
+
+.dialog__image {
+  inline-size: 39px;
+  block-size: 39px;
+  align-self: center;
+}
+
+.dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.dialog:not([open]) {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (width > 380px) {
+  .footer-container {
+    max-inline-size: 340px;
+  }
+  .button-save {
+    flex-direction: row;
+  }
+  .footer__floppy {
+    margin: 0 2px 0 19px;
+    block-size: 20px;
+  }
+}
+
+.f__bright {
+  filter: brightness(220%);
+}
+
+.f__grayscale {
+  filter: grayscale(1);
+}
+
+.f__sepia {
+  filter: sepia(100%);
+}
+
+.f__invert {
+  filter: invert(0.7);
+}
+
+.f__saturate {
+  filter: saturate(300%);
+}
+
+.f__mult {
+  filter: brightness(90%)invert(0.8)saturate(500%);
+}
+
+.f__blur {
+  filter: blur(5px);
+}
+
+.f__gray-hard {
+  filter: grayscale(0.8)brightness(80%);
+}
