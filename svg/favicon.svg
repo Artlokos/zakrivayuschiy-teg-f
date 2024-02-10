@@ -2,7 +2,7 @@
      width="256" 
      height="256" 
      viewBox="0 0 256 256" 
-     fill="none" 
+     fill="currentColor" 
      xmlns="http://www.w3.org/2000/svg"
      >
      
@@ -10,12 +10,6 @@
         @media (prefers-color-scheme: dark) {
             :root {
                 fill: rgba(0, 204, 20, 1);
-                fill:"white";
-            }
-        }
-        @media (prefers-color-scheme: light) {
-            :root {
-                fill: rgba(0, 0, 255, 1);
             }
         }
     </style>

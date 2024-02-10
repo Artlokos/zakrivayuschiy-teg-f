@@ -4,74 +4,73 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
-@import 'variables.css';
+@import "variables.css";
 
 :root.theme-dark {
-    --main-font: 'Inter-Variable';
-    --accent-font: 'PressStart2P';
-    --background-color:rgba(0, 0, 0, 1);
-    --accent-color:rgba(0, 204, 20, 1);
-    --gradient-color__lighting: rgba(0,127,12,1);
-    --gradient-color__darking:rgba(0,67,6,1);
-    --gradient-color__stroke:rgba(0,0,0,1);
-    --border-color:rgba(0, 0, 0, 1);
-    --font-weight-header: 785;
-    --font-weight-content:465;
-    --color-for__menu__header__hover:rgba(0,127,12,1);
-    --button-text-color: rgba(0, 204, 20, 1);
-    --contour-color: rgba(0, 204, 20, 1);
-    --main-body-color: rgba(0, 204, 20, 1);
+  --main-font: "Inter-Variable";
+  --accent-font: "PressStart2P";
+  --background-color: rgba(0, 0, 0, 1);
+  --accent-color: rgba(0, 204, 20, 1);
+  --gradient-color__lighting: rgba(0, 127, 12, 1);
+  --gradient-color__darking: rgba(0, 67, 6, 1);
+  --gradient-color__stroke: rgba(0, 0, 0, 1);
+  --border-color: rgba(0, 0, 0, 1);
+  --font-weight-header: 785;
+  --font-weight-content: 465;
+  --color-for__menu__header__hover: rgba(0, 127, 12, 1);
+  --button-text-color: rgba(0, 204, 20, 1);
+  --contour-color: rgba(0, 204, 20, 1);
+  --main-body-color: rgba(0, 204, 20, 1);
 }
 :root.theme-light {
-    --main-font: 'Inter-Variable';
-    --accent-font: 'PressStart2P';
-    --background-color:rgba(255, 255, 255, 1);
-    --accent-color:rgba(0, 0, 0, 1);
-    --gradient-color__lighting: rgba(231,231,231,1);
-    --gradient-color__darking:rgba(26,26,26,1);
-    --gradient-color__stroke:rgba(211,211,211,1);
-    --border-color:rgba(255, 255, 255, 1);
-    --font-weight-header: 700;
-    --font-weight-content:400;
-    --color-for__menu__header__hover:rgba(0,0,0,1);
-    --button-text-color: rgba(255, 255, 255, 1);
-    --contour-color: rgba(0, 0, 0, 1);
+  --main-font: "Inter-Variable";
+  --accent-font: "PressStart2P";
+  --background-color: rgba(255, 255, 255, 1);
+  --accent-color: rgba(0, 0, 0, 1);
+  --gradient-color__lighting: rgba(231, 231, 231, 1);
+  --gradient-color__darking: rgba(26, 26, 26, 1);
+  --gradient-color__stroke: rgba(211, 211, 211, 1);
+  --border-color: rgba(255, 255, 255, 1);
+  --font-weight-header: 700;
+  --font-weight-content: 400;
+  --color-for__menu__header__hover: rgba(0, 0, 0, 1);
+  --button-text-color: rgba(255, 255, 255, 1);
+  --contour-color: rgba(0, 0, 0, 1);
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
-        --main-font: 'Inter-Variable';
-        --accent-font: 'PressStart2P';
-        --background-color:rgba(0, 0, 0, 1);
-        --accent-color:rgba(0, 204, 20, 1);
-        --gradient-color__lighting: rgba(0,127,12,1);
-        --gradient-color__darking:rgba(0,67,6,1);
-        --gradient-color__stroke:rgba(0,0,0,1);
-        --border-color:rgba(0, 0, 0, 1);
-        --font-weight-header: 785;
-        --font-weight-content:465;
-        --color-for__menu__header__hover:rgba(0,127,12,1);
-        --button-text-color: rgba(0, 204, 20, 1);
-        --contour-color: rgba(0, 204, 20, 1);
-        --main-body-color: rgba(0, 204, 20, 1);
-        
-    }
+  :root {
+    --main-font: "Inter-Variable";
+    --accent-font: "PressStart2P";
+    --background-color: rgba(0, 0, 0, 1);
+    --accent-color: rgba(0, 204, 20, 1);
+    --gradient-color__lighting: rgba(0, 127, 12, 1);
+    --gradient-color__darking: rgba(0, 67, 6, 1);
+    --gradient-color__stroke: rgba(0, 0, 0, 1);
+    --border-color: rgba(0, 0, 0, 1);
+    --font-weight-header: 785;
+    --font-weight-content: 465;
+    --color-for__menu__header__hover: rgba(0, 127, 12, 1);
+    --button-text-color: rgba(0, 204, 20, 1);
+    --contour-color: rgba(0, 204, 20, 1);
+    --main-body-color: rgba(0, 204, 20, 1);
   }
+}
 
-  @media (prefers-color-scheme: light) {
-    :root {
-        --main-font: 'Inter-Variable';
-        --accent-font: 'PressStart2P';
-        --background-color:rgba(255, 255, 255, 1);
-        --accent-color:rgba(0, 0, 0, 1);
-        --gradient-color__lighting: rgba(231,231,231,1);
-        --gradient-color__darking:rgba(26,26,26,1);
-        --gradient-color__stroke:rgba(211,211,211,1);
-        --border-color:rgba(255, 255, 255, 1);
-        --font-weight-header: 700;
-        --font-weight-content:400;
-        --color-for__menu__header__hover:rgba(0,0,0,1);
-        --button-text-color: rgba(255, 255, 255, 1);
-        --contour-color: rgba(0, 0, 0, 1);
-    }
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-font: "Inter-Variable";
+    --accent-font: "PressStart2P";
+    --background-color: rgba(255, 255, 255, 1);
+    --accent-color: rgba(0, 0, 0, 1);
+    --gradient-color__lighting: rgba(231, 231, 231, 1);
+    --gradient-color__darking: rgba(26, 26, 26, 1);
+    --gradient-color__stroke: rgba(211, 211, 211, 1);
+    --border-color: rgba(255, 255, 255, 1);
+    --font-weight-header: 700;
+    --font-weight-content: 400;
+    --color-for__menu__header__hover: rgba(0, 0, 0, 1);
+    --button-text-color: rgba(255, 255, 255, 1);
+    --contour-color: rgba(0, 0, 0, 1);
   }
+}

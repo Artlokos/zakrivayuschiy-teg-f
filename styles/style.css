@@ -184,7 +184,6 @@
 
 .img-container img {
   width: clamp(var(--width-mobile), var(--width-desktop));
-  width: var(--width-desktop);
   outline: 2px solid var(--accent-color);
 }
 
@@ -204,12 +203,7 @@
     "opsz" 0;
 }
 
-@supports (
-  (text-stroke: 1px var(--border-color)) or
-    (-webkit-text-stroke: var(--border-color))
-) 
-
-{
+@supports ((-webkit-text-stroke: var(--border-color))) {
   .card-watermark {
     position: absolute;
     z-index: 1;

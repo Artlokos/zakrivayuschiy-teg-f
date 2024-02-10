@@ -1,39 +1,47 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
-@import 'themes.css';
+@import "themes.css";
 :root {
-    --main-font:'Inter-Variable';
-    --main-font-weight:400;
-    --main-font-bold:700;
-    --accent-font:'PressStart2P';
-    --background-image:
-            linear-gradient(var(--gradient-color__lighting) 0.01%, var(--gradient-color__darking)),
-            repeating-linear-gradient(0deg,var(--gradient-stroke__color) 2px, transparent 2px),
-            repeating-linear-gradient(90deg,var(--gradient-stroke__color) 2px, transparent 2px);
-    
-            
-            
-    --width-desktop:700px;
-    --width-mobile:375px;
+  --main-font: "Inter-Variable";
+  --main-font-weight: 400;
+  --main-font-bold: 700;
+  --accent-font: "PressStart2P";
+  --background-image: linear-gradient(
+      var(--gradient-color__lighting) 0.01%,
+      var(--gradient-color__darking)
+    ),
+    repeating-linear-gradient(
+      0deg,
+      var(--gradient-stroke__color) 2px,
+      transparent 2px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      var(--gradient-stroke__color) 2px,
+      transparent 2px
+    );
 
-    --background-color:rgba(255, 255, 255, 1);
-    --accent-color:rgba(0, 0, 0, 1);
-    --gradient-color__lighting: rgba(231,231,231,1);
-    --gradient-color__darking:rgba(26,26,26,1);
-    --gradient-color__stroke:rgba(211,211,211,1);
-    --border-color:rgba(255, 255, 255, 1);
-    --font-weight-header: 700;
-    --font-weight-content:400;
-    --color-for__menu__header__hover:rgba(0,0,0,1);
-    --button-text-color: rgba(0, 0, 0, 1);
+  --width-desktop: 700px;
+  --width-mobile: 375px;
 
-    --sparks-fill-color: #f00;
-    --sparks-fill-color-tr: rgb(255 0 0 / 0%);
-    --contour-color: rgb(0 0 0);
-    --core-color: rgb(0 0 0);
-    --core-color-tr: rgb(0 0 0 / 0%);
-    --main-body-color: rgb(0 0 0);
-    --main-body-color-tr: rgb(0 0 0 / 0%);
-    --contour-active-color: #f00;
-    --core-active-color: #f00;
-    --main-body-active-color: #f00;
-        }
+  --background-color: rgba(255, 255, 255, 1);
+  --accent-color: rgba(0, 0, 0, 1);
+  --gradient-color__lighting: rgba(231, 231, 231, 1);
+  --gradient-color__darking: rgba(26, 26, 26, 1);
+  --gradient-color__stroke: rgba(211, 211, 211, 1);
+  --border-color: rgba(255, 255, 255, 1);
+  --font-weight-header: 700;
+  --font-weight-content: 400;
+  --color-for__menu__header__hover: rgba(0, 0, 0, 1);
+  --button-text-color: rgba(0, 0, 0, 1);
+
+  --sparks-fill-color: #f00;
+  --sparks-fill-color-tr: rgb(255 0 0 / 0%);
+  --contour-color: rgb(0 0 0);
+  --core-color: rgb(0 0 0);
+  --core-color-tr: rgb(0 0 0 / 0%);
+  --main-body-color: rgb(0 0 0);
+  --main-body-color-tr: rgb(0 0 0 / 0%);
+  --contour-active-color: #f00;
+  --core-active-color: #f00;
+  --main-body-active-color: #f00;
+}
