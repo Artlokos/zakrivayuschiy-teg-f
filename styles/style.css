@@ -166,6 +166,12 @@
   }
 }
 
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap:50px;
+}
+
 .card-section {
   background-color: var(--background-color);
   font-family: var(--main-font);
@@ -183,7 +189,7 @@
 }
 
 .img-container img {
-  width: clamp(var(--width-mobile), var(--width-desktop));
+  width: 700px;
   outline: 2px solid var(--accent-color);
 }
 
@@ -209,19 +215,18 @@
     z-index: 1;
     font-family: var(--accent-font), sans-serif;
     letter-spacing: 0em;
-    width: 98px;
+    width: 107px;
     height: 14px;
     inset: 25px 25px auto auto;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 14px;
-    text-transform: uppercase;
-    mix-blend-mode: hard-light;
+    /* text-transform: uppercase; */
+    mix-blend-mode: screen;
     opacity: 0.5;
     -webkit-text-stroke: 1px var(--border-color);
     text-shadow: 1px var(--border-color);
-    mix-blend-mode: screen;
   }
 }
 
@@ -473,7 +478,7 @@
 }
 
 .f__mult {
-  filter: brightness(90%) invert(0.8) saturate(500%);
+  filter: brightness(60%) invert(0.6) saturate(400%);
 }
 
 .f__blur {
@@ -481,5 +486,13 @@
 }
 
 .f__gray-hard {
-  filter: grayscale(0.8) brightness(80%);
+  filter: grayscale(0.9) brightness(50%);
+}
+
+.f__burn{
+  filter: sepia(50%) brightness(108%) hue-rotate(344deg) saturate(664%) contrast(901%);
+}
+
+.f__fire {
+  filter: sepia(27%) brightness(133%) hue-rotate(302deg) saturate(252%) contrast(418%);
 }
