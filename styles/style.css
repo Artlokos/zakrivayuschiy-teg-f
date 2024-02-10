@@ -13,32 +13,40 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 
 */
-@import 'variables.css';
-@import 'themes.css';
-@import 'globals.css';
-@import 'animations.css';
+@import "variables.css";
+@import "themes.css";
+@import "globals.css";
+@import "animations.css";
 
 .page {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   gap: 100px;
-  width: clamp(370px,700px,1440px);
+  width: clamp(370px, 700px, 1440px);
   min-block-size: 100dvb;
-  font-family: var(--main-font), 'Roboto';
+  font-family: var(--main-font), "Roboto";
   background-color: var(--background-color);
-  background-image: 
-  repeating-linear-gradient(0deg, var(--gradient-color__stroke) , transparent 2px),
-  repeating-linear-gradient(90deg, var(--gradient-color__stroke) , transparent 2px), 
-  linear-gradient(var(--gradient-color__lighting) 0.01%, var(--gradient-color__darking) 100%);
-  color:var(--accent-color);
+  background-image: repeating-linear-gradient(
+      0deg,
+      var(--gradient-color__stroke),
+      transparent 2px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      var(--gradient-color__stroke),
+      transparent 2px
+    ),
+    linear-gradient(
+      var(--gradient-color__lighting) 0.01%,
+      var(--gradient-color__darking) 100%
+    );
+  color: var(--accent-color);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  font-variation-settings: 
-  'wght' var(--font-weight-content),
-  'wdth' 100,
-  'opsz' 0;
+  font-variation-settings: "wght" var(--font-weight-content), "wdth" 100,
+    "opsz" 0;
 }
 
 .header {
@@ -46,13 +54,13 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  width: clamp(371px,696px);
+  width: clamp(371px, 696px);
   align-items: center;
   border: 2px solid var(--accent-color);
-  background-color:var(--background-color); 
+  background-color: var(--background-color);
   margin-block-start: 100px;
   transition: background-color 0.3s;
-  transition-timing-function: ease; 
+  transition-timing-function: ease;
 }
 
 .logo-group {
@@ -96,7 +104,7 @@
 }
 
 .theme-menu__button:hover {
-  color:var(--accent-color);
+  color: var(--accent-color);
   opacity: 0.6;
   transition: opacity 0.3s;
   transition-timing-function: ease;
@@ -104,7 +112,7 @@
 }
 
 .theme-menu__button::after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   background-color: var(--accent-color);
@@ -118,7 +126,7 @@
 }
 
 .theme-menu__button:focus {
-  outline: none ;
+  outline: none;
   text-decoration: underline;
   opacity: 0.6;
 }
@@ -133,7 +141,7 @@
 
 .theme-menu__button:disabled {
   position: relative;
-  color:var(--accent-color);
+  color: var(--accent-color);
   opacity: 0.6;
   transition: opacity 0.3s;
   transition-timing-function: ease;
@@ -141,7 +149,7 @@
 }
 
 .theme-menu__button:disabled::before {
-  position:absolute;
+  position: absolute;
   content: "▶";
   animation: select__point 0.5s ease-in-out infinite;
 }
@@ -169,23 +177,21 @@
   flex-direction: column;
 }
 
-.img-container{
+.img-container {
   position: relative;
   margin-bottom: 20px;
 }
 
-.img-container img{
-  width: clamp(var(--width-mobile),var(--width-desktop));
-  width: var(--width-desktop); 
+.img-container img {
+  width: clamp(var(--width-mobile), var(--width-desktop));
+  width: var(--width-desktop);
   outline: 2px solid var(--accent-color);
 }
 
 .card-title {
   padding: 5px 10px;
-  font-variation-settings:
-    'wght' var(--font-weight-header),
-    'wdth' 100,
-    'opsz' 0;
+  font-variation-settings: "wght" var(--font-weight-header), "wdth" 100,
+    "opsz" 0;
 }
 
 .card-content {
@@ -194,13 +200,16 @@
   font-size: 18px;
   line-height: 21px;
   padding: 0px 25px 20px 25px;
-  font-variation-settings:
-  'wght' var(--font-weight-content),
-  'wdth' 100,
-  'opsz' 0;
+  font-variation-settings: "wght" var(--font-weight-content), "wdth" 100,
+    "opsz" 0;
 }
 
-@supports((text-stroke: 1px var(--border-color)) or (-webkit-text-stroke: var(--border-color))) {
+@supports (
+  (text-stroke: 1px var(--border-color)) or
+    (-webkit-text-stroke: var(--border-color))
+) 
+
+{
   .card-watermark {
     position: absolute;
     z-index: 1;
@@ -208,7 +217,7 @@
     letter-spacing: 0em;
     width: 98px;
     height: 14px;
-    inset:25px 25px auto auto;
+    inset: 25px 25px auto auto;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -237,41 +246,41 @@
   border: none;
   cursor: pointer;
   background-color: var(--background-color);
-.like-icon {
-  .core {
-  fill:var(--core-color-tr);
-  transition: fill 0.3s 0.03s linear;
+  .like-icon {
+    .core {
+      fill: var(--core-color-tr);
+      transition: fill 0.3s 0.03s linear;
+    }
+    .main-body {
+      fill: var(--main-body-color-tr);
+      transition: fill 0.3s linear;
+    }
+    .contour {
+      fill: var(--contour-color);
+    }
+    .sparks {
+      fill: var(--sparks-fill-color-tr);
+    }
   }
-  .main-body {
-    fill:var(--main-body-color-tr);
-    transition: fill 0.3s linear;
-  }
-  .contour {
-    fill:var(--contour-color);
-  }
-  .sparks {
-    fill:var(--sparks-fill-color-tr);
-  }
-}  
 
-.like-icon.is-liked {
-  animation: icon-grow 0.3s 0.1s ease-in reverse;
-  .core {
-    animation: core-fill 0.3s linear;
-    animation-fill-mode: forwards;
+  .like-icon.is-liked {
+    animation: icon-grow 0.3s 0.1s ease-in reverse;
+    .core {
+      animation: core-fill 0.3s linear;
+      animation-fill-mode: forwards;
+    }
+    .main-body {
+      animation: main-body-fill 0.3s 0.05s linear;
+      animation-fill-mode: forwards;
+    }
+    .contour {
+      animation: contour-fill 0.3s 0.06s linear;
+      animation-fill-mode: forwards;
+    }
+    .sparks {
+      animation: sparks-fill 0.3s 0.3s ease-in reverse;
+    }
   }
-  .main-body {
-    animation: main-body-fill 0.3s 0.05s linear;
-    animation-fill-mode: forwards;
-  }
-  .contour {
-    animation: contour-fill 0.3s 0.06s linear;
-    animation-fill-mode: forwards;
-  }
-  .sparks {
-    animation: sparks-fill 0.3s 0.3s ease-in reverse;
-  }
-}
 }
 
 .card__icon-button:focus {
@@ -286,7 +295,7 @@
 .card__icon-button:hover {
   .like-icon {
     .core {
-      fill:var(--core-color);
+      fill: var(--core-color);
       transition: fill 0.3s linear;
     }
 
@@ -300,7 +309,7 @@
 .card__icon-button:active {
   .like-icon {
     .core {
-      fill:var(--core-color);
+      fill: var(--core-color);
       transition: fill 0.3s linear;
     }
 
@@ -315,11 +324,11 @@
   position: relative;
   z-index: 1;
   display: block;
-  font-family: var(--accent-font),sans-serif;
+  font-family: var(--accent-font), sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 90%;
-  color:var(--button-text-color);
+  color: var(--button-text-color);
   mix-blend-mode: difference;
 }
 
@@ -328,20 +337,19 @@
   block-size: 38px;
   margin: 0;
   padding: 0;
-  
-  }
+}
 
-  .button-save {
-    inline-size: 335px;
-    block-size: 55px;
-  }
-  
-  .button-save:focus {
-    outline: none;
-  }
+.button-save {
+  inline-size: 335px;
+  block-size: 55px;
+}
+
+.button-save:focus {
+  outline: none;
+}
 
 .simple-button {
-  position:relative;
+  position: relative;
   background-color: var(--background-color);
   border: 2px solid var(--accent-color);
   transition: box-shadow 0.3s;
@@ -363,7 +371,7 @@
 .simple-button::before {
   content: "";
   position: absolute;
-  inset:0;
+  inset: 0;
   z-index: 1;
   background-color: var(--accent-color);
   transition: transform 0.5s ease-in-out;
@@ -385,7 +393,7 @@
 .footer__floppy {
   position: relative;
   z-index: 1;
-  color:var(--button-text-color);
+  color: var(--button-text-color);
   block-size: 28px;
   inline-size: auto;
   mix-blend-mode: difference;
@@ -396,7 +404,7 @@
   inset: 0;
   border: 2px solid var(--accent-color);
   padding: 32px 42px;
-  color:var(--accent-color);
+  color: var(--accent-color);
   font-family: var(--accent-font), sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -471,7 +479,7 @@
 }
 
 .f__mult {
-  filter: brightness(90%)invert(0.8)saturate(500%);
+  filter: brightness(90%) invert(0.8) saturate(500%);
 }
 
 .f__blur {
@@ -479,5 +487,5 @@
 }
 
 .f__gray-hard {
-  filter: grayscale(0.8)brightness(80%);
+  filter: grayscale(0.8) brightness(80%);
 }
