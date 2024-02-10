@@ -212,13 +212,12 @@
 @supports ((-webkit-text-stroke: var(--border-color))) {
   .card-watermark {
     position: absolute;
-    display: flex;
-
     z-index: 1;
     font-family: var(--accent-font), sans-serif;
     letter-spacing: 0em;
-    width: 107px;
+    width: 100%;
     height: 14px;
+    text-align: end;
     inset: 25px 25px auto auto;
     font-style: normal;
     font-weight: 400;
