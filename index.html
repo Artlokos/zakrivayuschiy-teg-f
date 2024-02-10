@@ -16,7 +16,36 @@
   </head>
   <body class="page">
 
-
+  <header class="header">
+      <div class="logo-group">
+      <h1 class="header__title-text" aria-hidden="true">&lt;/HTML&gt;</h1>
+      <h2 class="header__subtitle-text">Закрывающий тег</h2>
+    </div>
+      <nav class="theme-menu header__theme-menu">
+        <ul class="theme-menu__list">
+          <li class="theme-menu__item">
+            <button type="button" data-theme="dark" class="theme-menu__button">
+              Темно
+            </button>
+          </li>
+          <li class="theme-menu__item">
+            <button
+              type="button"
+              data-theme="auto"
+              disabled
+              class="theme-menu__button"
+            >
+              Авто
+            </button>
+          </li>
+          <li class="theme-menu__item">
+            <button type="button" data-theme="light" class="theme-menu__button">
+              Светло
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <main>
       <section class="card-section">
@@ -77,5 +106,15 @@
  
     <script src="./scripts/like.js"></script>
   </body>
-
+  <dialog class="dialog" id="dialog">
+    <form class="dialog__form" method="dialog">
+      <svg class="dialog__image" viewBox="0 0 39 39">
+        <use href="./svg/floppy.svg#floppy"/>
+      </svg>
+      <p class="dialog__text">вставьте дискету, чтобы продолжить</p> 
+      <button class="dialog__button simple-button" type="submit">
+        <span class="button__text">ok</span>
+      </button>
+    </form>
+  </dialog>
 </html>

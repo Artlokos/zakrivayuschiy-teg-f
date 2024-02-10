@@ -236,8 +236,8 @@
   align-items: center;
   border: none;
   cursor: pointer;
+  background-color: var(--background-color);
 .like-icon {
-  /* position: absolute; */
   .core {
   fill:var(--core-color-tr);
   transition: fill 0.3s 0.03s linear;
@@ -385,7 +385,7 @@
 .footer__floppy {
   position: relative;
   z-index: 1;
-  color:var(--accent-color);
+  color:var(--button-text-color);
   block-size: 28px;
   inline-size: auto;
   mix-blend-mode: difference;
