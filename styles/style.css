@@ -228,17 +228,12 @@
   gap: 12px;
   margin-inline-end: 25px;
   margin-bottom: 25px;
-  background-color: transparent;
 }
 
 .card__icon-button {
   position: relative;
   display: flex;
   align-items: center;
-  padding: 2px;
-  transition: outline 0.3s;
-  transition-timing-function: ease;
-  background-color: transparent;
   border: none;
   cursor: pointer;
 .like-icon {
@@ -285,6 +280,7 @@
 
 .card__icon-button:focus-visible {
   outline: 2px solid var(--accent-color);
+  transition: outline 0.3s ease;
 }
 
 .card__icon-button:hover {
@@ -330,6 +326,8 @@
 .card__like-button {
   inline-size: 130px;
   block-size: 38px;
+  margin: 0;
+  padding: 0;
   
   }
 
@@ -376,7 +374,6 @@
 .simple-button:hover::before {
   transform: scaleX(1);
 }
-
 
 .footer__container {
   display: flex;

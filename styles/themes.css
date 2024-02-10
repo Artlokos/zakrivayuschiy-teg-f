@@ -19,6 +19,9 @@
     --font-weight-content:465;
     --color-for__menu__header__hover:rgba(0,127,12,1);
     --button-text-color: rgba(0, 204, 20, 1);
+    --contour-color: rgba(0, 204, 20, 1);
+    --main-body-color: rgba(0, 204, 20, 1);
+    --main-body-color-tr: rgba(0, 204, 20, 1);
 }
 :root.theme-light {
     --main-font: 'Inter-Variable';
@@ -33,6 +36,7 @@
     --font-weight-content:400;
     --color-for__menu__header__hover:rgba(0,0,0,1);
     --button-text-color: rgba(255, 255, 255, 1);
+    --contour-color: rgba(0, 0, 0, 1);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -49,6 +53,10 @@
         --font-weight-content:465;
         --color-for__menu__header__hover:rgba(0,127,12,1);
         --button-text-color: rgba(0, 204, 20, 1);
+        --contour-color: rgba(0, 204, 20, 1);
+        --main-body-color: rgba(0, 204, 20, 1);
+        --main-body-color-tr: rgba(0, 204, 20, 1);
+        
     }
   }
 
@@ -66,5 +74,6 @@
         --font-weight-content:400;
         --color-for__menu__header__hover:rgba(0,0,0,1);
         --button-text-color: rgba(255, 255, 255, 1);
+        --contour-color: rgba(0, 0, 0, 1);
     }
   }
