@@ -212,6 +212,8 @@
 @supports ((-webkit-text-stroke: var(--border-color))) {
   .card-watermark {
     position: absolute;
+    display: flex;
+
     z-index: 1;
     font-family: var(--accent-font), sans-serif;
     letter-spacing: 0em;
@@ -222,7 +224,6 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 14px;
-    /* text-transform: uppercase; */
     mix-blend-mode: screen;
     opacity: 0.5;
     -webkit-text-stroke: 1px var(--border-color);
@@ -387,6 +388,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-block-end: 100px;
 }
 
 .footer__floppy {
@@ -489,7 +491,7 @@
   filter: grayscale(0.9) brightness(50%);
 }
 
-.f__burn{
+.f__burn {
   filter: sepia(50%) brightness(108%) hue-rotate(344deg) saturate(664%) contrast(901%);
 }
 
