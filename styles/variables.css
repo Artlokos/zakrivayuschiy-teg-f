@@ -1,7 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 @import "themes.css";
 :root {
-  --main-font: "Inter-Variable";
+  --main-font: "Inter-Variable", sans-serif;
   --main-font-weight: 400;
   --main-font-bold: 700;
   --accent-font: "PressStart2P";
