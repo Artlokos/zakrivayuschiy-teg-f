@@ -12,8 +12,6 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
-@import 'variables.css';
-
 @keyframes move {
     0% {
         inset-inline-start: -20px;
