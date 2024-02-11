@@ -12,42 +12,46 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
-@keyframes move {
-    0% {
-        inset-inline-start: -20px;
-    }
-    100% {
-        inset-inline-start: -16px;
-    }
-}
 
-@keyframes core-fill {
+@keyframes select__point {
+    0% {
+      inset-inline-start: -20px;
+    }
+    50% {
+      inset-inline-start: -24px;
+    }
     100% {
+      inset-inline-start: -20px;
+    }
+  }
+  
+@keyframes core-fill {
+    to {
         fill:var(--core-active-color);
     }
 }
 
 @keyframes main-body-fill {
-    100% {
+    to {
         fill:var(--main-body-active-color);
     }
 }
 
 @keyframes contour-fill {
-    100% {
+    to {
         fill:var(--contour-active-color);
     }
 }
 
 @keyframes icon-grow {
-    100% {
+    to {
         transform: scale(1.5);
         transform-origin: center;
     }
 }
 
 @keyframes sparks-fill {
-    100% {
+    to {
         fill:var(--sparks-fill-color);
     }
 }

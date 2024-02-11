@@ -151,19 +151,7 @@
 .theme-menu__button:disabled::before {
   position: absolute;
   content: "▶";
-  animation: select__point 0.5s ease-in-out infinite;
-}
-
-@keyframes select__point {
-  0% {
-    inset-inline-start: -20px;
-  }
-  50% {
-    inset-inline-start: -24px;
-  }
-  100% {
-    inset-inline-start: -20px;
-  }
+  animation: select__point 0.5s ease-in-out infinite alternate;
 }
 
 .cards {
