@@ -13,11 +13,6 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 
 */
-@import "variables.css";
-@import "themes.css";
-@import "globals.css";
-@import "animations.css";
-
 .page {
   display: flex;
   flex-direction: column;
@@ -25,7 +20,7 @@
   gap: 100px;
   width: clamp(370px, 700px, 1440px);
   min-block-size: 100dvb;
-  font-family: var(--main-font), "Roboto";
+  font-family: var(--main-font), sans-serif;
   background-color: var(--background-color);
   background-image: repeating-linear-gradient(
       0deg,
@@ -79,6 +74,11 @@
   font-style: normal;
   font-weight: 400;
   border-color: transparent;
+}
+
+.header-link {
+  text-decoration: none;
+  cursor:pointer;
 }
 
 .header__title-text {
@@ -218,7 +218,7 @@
   }
 }
 
-.heart__and__button-like {
+.card-buttons__container {
   display: flex;
   align-self: flex-end;
   gap: 12px;
@@ -370,7 +370,7 @@
   transform: scaleX(1);
 }
 
-.footer__container {
+.footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -425,7 +425,7 @@
 }
 
 .dialog::backdrop {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .dialog:not([open]) {
