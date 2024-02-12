@@ -17,7 +17,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  gap: 100px;
+  gap: 50px;
   width: clamp(370px, 700px, 1440px);
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
@@ -49,7 +49,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  width: clamp(371px, 696px);
+  width: 100%;
   align-items: center;
   border: 2px solid var(--accent-color);
   background-color: var(--background-color);
@@ -76,6 +76,10 @@
   border-color: transparent;
 }
 
+.header__theme-menu{
+  margin-block-end: 25px;
+}
+
 .header-link {
   text-decoration: none;
   cursor:pointer;
@@ -86,6 +90,7 @@
 }
 
 .header__subtitle-text {
+  margin-block-start: 20px;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 }
 
@@ -93,7 +98,7 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
-  margin-block-end: 25px;
+  margin-inline-start: 20px;
 }
 
 .theme-menu__button {
@@ -101,6 +106,7 @@
   background-color: transparent;
   border: none;
   padding: 0;
+  font-size: 14px;
 }
 
 .theme-menu__button:hover {
@@ -177,8 +183,9 @@
 }
 
 .img-container img {
-  width: 700px;
   outline: 2px solid var(--accent-color);
+  object-fit: fill;
+  object-position: center;
 }
 
 .card-title {
@@ -192,36 +199,38 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  padding: 0px 25px 20px 25px;
+  padding: 0px 25px 25px 25px;
   font-variation-settings: "wght" var(--font-weight-content), "wdth" 100,
     "opsz" 0;
 }
 
+.card-watermark {
+  position: absolute;
+  z-index: 1;
+  font-family: var(--accent-font), sans-serif;
+  letter-spacing: 0em;
+  width: 100%;
+  text-align: end;
+  inset: 25px 25px auto auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  mix-blend-mode: screen;
+  opacity: 0.5;
+}
+
 @supports ((-webkit-text-stroke: var(--border-color))) {
   .card-watermark {
-    position: absolute;
-    z-index: 1;
-    font-family: var(--accent-font), sans-serif;
-    letter-spacing: 0em;
-    width: 100%;
-    height: 14px;
-    text-align: end;
-    inset: 25px 25px auto auto;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 14px;
-    mix-blend-mode: screen;
-    opacity: 0.5;
-    -webkit-text-stroke: 1px var(--border-color);
-    text-shadow: 1px var(--border-color);
+  -webkit-text-stroke: 1px var(--border-color);
+  text-shadow: 1px var(--border-color);
   }
 }
 
 .card-buttons__container {
   display: flex;
   align-self: flex-end;
-  gap: 12px;
+  gap: 5px;
   margin-inline-end: 25px;
   margin-bottom: 25px;
 }
@@ -320,15 +329,12 @@
 }
 
 .card__like-button {
-  inline-size: 130px;
-  block-size: 38px;
-  margin: 0;
-  padding: 0;
+  min-inline-size: 130px;
+  padding: 12.5px 37px;
 }
 
 .button-save {
-  inline-size: 335px;
-  block-size: 55px;
+  padding: 18.5px 21px ;
 }
 
 .button-save:focus {
@@ -339,7 +345,8 @@
   position: relative;
   background-color: var(--background-color);
   border: 2px solid var(--accent-color);
-  transition: box-shadow 0.3s;
+  margin: 0;
+  cursor: pointer;
 }
 
 .simple-button:focus {
@@ -389,39 +396,36 @@
 
 .dialog {
   position: fixed;
-  inset: 0;
   border: 2px solid var(--accent-color);
-  padding: 32px 42px;
+  padding: 30px;
   color: var(--accent-color);
   font-family: var(--accent-font), sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 150%;
+  line-height: 21px;
   text-transform: uppercase;
   background-color: var(--background-color);
   transition: opacity 0.3s ease-in-out;
-  max-inline-size: 343px;
 }
 
 .dialog__form {
   display: grid;
   grid-template-columns: 0.3fr 1fr;
-  grid-template-rows: 1fr fit-content;
+  max-width: 293px;
   row-gap: 30px;
+  align-content: center;
 }
 
 .dialog__button {
   grid-column: 1 / 3;
-  grid-row: 2;
-  padding: 9px 0;
+  padding: 11px;
   text-transform: uppercase;
   background-color: var(--background-color);
+  max-inline-size: 100%;
 }
 
 .dialog__image {
   inline-size: 39px;
   block-size: 39px;
-  align-self: center;
+  padding: 10px;
 }
 
 .dialog::backdrop {
