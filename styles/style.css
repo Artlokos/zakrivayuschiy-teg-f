@@ -18,7 +18,7 @@
   flex-direction: column;
   flex-wrap: nowrap;
   gap: 100px;
-  width: clamp(370px, 700px, 1440px);
+  width: clamp(375px, 700px, 1440px);
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
   background-color: var(--background-color);
@@ -168,28 +168,39 @@
   display: flex;
   flex-direction: column;
   gap:52px;
+  width: clamp(375px, 700px, 1440px);
 }
 
 .card-section {
   background-color: var(--background-color);
   font-family: var(--main-font);
   outline: 2px solid var(--accent-color);
+  width: clamp(375px, 700px, 1440px);
 }
 
 .card {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: clamp(375px, 700px, 1440px);
 }
 
 .img-container {
   position: relative;
   margin-bottom: 19px;
+  width: clamp(375px, 700px, 1440px);
 }
 
 .img-container img {
   outline: 2px solid var(--accent-color);
   object-fit: cover;
   object-position: center;
+  width: clamp(375px, 700px, 1440px);
+}
+
+.card-image {
+  
 }
 
 .card-title {
