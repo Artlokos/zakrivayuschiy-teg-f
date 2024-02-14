@@ -25,7 +25,4 @@
   --contour-active-color: #f00;
   --core-active-color: #f00;
   --main-body-active-color: #f00;
-  --background-image: linear-gradient(var(--gradient-color__lighting) 0.01%, var(--gradient-color__darking) 100%,),
-    repeating-linear-gradient(0deg,var(--gradient-stroke__color) 2px,transparent 2px),
-    repeating-linear-gradient(90deg,var(--gradient-stroke__color) 2px,transparent 2px);
 }

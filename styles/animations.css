@@ -13,15 +13,31 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
+.like-icon.is-liked {
+    animation: icon-grow 0.3s 0.1s ease-in reverse;
+    .core {
+      animation: core-fill 0.3s linear;
+      animation-fill-mode: forwards;
+    }
+    .main-body {
+      animation: main-body-fill 0.3s 0.05s linear;
+      animation-fill-mode: forwards;
+    }
+    .contour {
+      animation: contour-fill 0.3s 0.06s linear;
+      animation-fill-mode: forwards;
+    }
+    .sparks {
+      animation: sparks-fill 0.3s 0.3s ease-in reverse;
+    }
+}
+
 @keyframes select__point {
     0% {
       inset-inline-start: -20px;
     }
-    50% {
-      inset-inline-start: -24px;
-    }
     100% {
-      inset-inline-start: -20px;
+      inset-inline-start: -24px;
     }
   }
   

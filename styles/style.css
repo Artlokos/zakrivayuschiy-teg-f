@@ -23,16 +23,16 @@
   font-family: var(--main-font), sans-serif;
   background-color: var(--background-color);
   background-image: repeating-linear-gradient(
-      0deg,
-      var(--gradient-color__stroke),
-      transparent 2px
+      90deg,
+      var(--gradient-color__stroke) 0 2px,
+      transparent 2px 4px
     ),
     repeating-linear-gradient(
-      90deg,
-      var(--gradient-color__stroke),
-      transparent 2px
+      0deg,
+      var(--gradient-color__stroke) 0 2px,
+      transparent 2px 4px
     ),
-    linear-gradient(
+    linear-gradient( var(--gradient-color__lighting) 0,
       var(--gradient-color__lighting) 0.01%,
       var(--gradient-color__darking) 100%
     );
@@ -263,26 +263,8 @@
         fill: var(--sparks-fill-color-tr);
       }
     }
-
-  .like-icon.is-liked {
-    animation: icon-grow 0.3s 0.1s ease-in reverse;
-    .core {
-      animation: core-fill 0.3s linear;
-      animation-fill-mode: forwards;
-    }
-    .main-body {
-      animation: main-body-fill 0.3s 0.05s linear;
-      animation-fill-mode: forwards;
-    }
-    .contour {
-      animation: contour-fill 0.3s 0.06s linear;
-      animation-fill-mode: forwards;
-    }
-    .sparks {
-      animation: sparks-fill 0.3s 0.3s ease-in reverse;
-    }
   }
-}
+
 
 .card__icon-button:focus {
   outline: none;
@@ -326,10 +308,10 @@
   z-index: 1;
   display: block;
   font-family: var(--accent-font), sans-serif;
+  color: var(--button-text-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 90%;
-  color: var(--button-text-color);
   mix-blend-mode: difference;
 }
 
@@ -349,11 +331,12 @@
   border-radius: 0;
   margin: 0;
   cursor: pointer;
+  color: var(--accent-color);
 }
 
 .simple-button:focus {
   border-radius: 0px;
-  box-shadow: 2px 2px 2px var(--accent-color);
+  box-shadow: 2px 2px var(--accent-color);
   transition: box-shadow 0.3s;
   transition-timing-function: ease;
 }
@@ -409,17 +392,12 @@
   background-color: var(--background-color);
   transition: opacity 0.3s ease-in-out;
   max-inline-size: 357px;
-  max-block-size: 193px;
-}
-
-.dialog__image{
-  display: flex;
-  justify-content: center;
 }
 
 .dialog__form {
   display: grid;
   grid-template-columns: 0.3fr 1fr;
+  grid-template-rows: min-content max-content;
   max-width: 293px;
   row-gap: 30px;
   align-content: center;
@@ -443,7 +421,7 @@
 
 @media (width <= 375px) {
   .footer-container {
-    max-inline-size: 340px;
+    max-inline-size: 375px;
   }
   .button-save {
     flex-direction: row;
