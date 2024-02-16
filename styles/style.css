@@ -18,7 +18,7 @@
   flex-direction: column;
   flex-wrap: nowrap;
   gap: 100px;
-  width: clamp(375px, 700px, 1440px);
+  width: clamp(375px, 99%, 700px);
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
   background-color: var(--background-color);
@@ -168,14 +168,13 @@
   display: flex;
   flex-direction: column;
   gap:52px;
-  width: clamp(375px, 700px, 1440px);
+  max-inline-size: 100%;
 }
 
 .card-section {
   background-color: var(--background-color);
   font-family: var(--main-font);
   outline: 2px solid var(--accent-color);
-  width: clamp(375px, 700px, 1440px);
 }
 
 .card {
@@ -183,24 +182,20 @@
   flex-direction: column;
   align-items: flex-start;
   align-content: flex-start;
-  width: clamp(375px, 700px, 1440px);
+  max-inline-size:100%;
 }
 
 .img-container {
   position: relative;
   margin-bottom: 19px;
-  width: clamp(375px, 700px, 1440px);
+  max-inline-size:100%;
 }
 
 .img-container img {
   outline: 2px solid var(--accent-color);
   object-fit: cover;
   object-position: center;
-  width: clamp(375px, 700px, 1440px);
-}
-
-.card-image {
-  
+  width:100%;
 }
 
 .card-title {
@@ -248,6 +243,7 @@
   align-self: flex-end;
   margin-inline-end: 26px;
   margin-bottom: 25px;
+  gap: 1px;
 }
 
 .card__icon-button {
@@ -278,12 +274,13 @@
 
 
 .card__icon-button:focus {
-  outline: none;
+  border: none;
 }
 
 .card__icon-button:focus-visible {
-  outline: 2px solid var(--accent-color);
-  transition: outline 0.3s ease;
+  border: 2px solid var(--accent-color);
+  border-radius: none;
+  transition: border 0.3s ease;
 }
 
 .card__icon-button:hover {
@@ -331,8 +328,12 @@
 }
 
 .button-save {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   min-inline-size: 335px;
-  min-block-size: 55px;
+  min-block-size: 51px;
 }
 
 .simple-button {
