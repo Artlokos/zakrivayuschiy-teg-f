@@ -30,7 +30,7 @@ a {
 
 button,
 input {
-  color: var(--accent-color);
+  color: currentColor;
   font-family: inherit;
   font-size: inherit;
 }

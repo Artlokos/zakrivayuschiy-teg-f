@@ -28,7 +28,8 @@
   --border-color: rgba(255, 255, 255, 1);
   --font-weight-header: 700;
   --font-weight-content: 400;
-  --button-text-color: rgba(255, 255, 255, 1);
+  --button-text-color: rgba(0, 0, 0, 1);
+  --button-text-color: rgba(255,255, 255, 1);
   --contour-color: rgba(0, 0, 0, 1);
   --main-body-color: rgba(0, 0, 0, 1);
 }
