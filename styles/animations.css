@@ -14,31 +14,28 @@
 */
 
 .theme-menu__button:disabled::before {
-    animation: select__point 0.5s ease-in-out infinite alternate;
+    animation: select__point 0.5s ease infinite alternate;
 }
 
 .like-icon.is-liked {
-    animation: icon-grow 0.3s 0.3s ease-in reverse;
+    animation: icon-grow 0.3s 0.3s ease-in-out reverse;
     .core {
       animation: core-fill 0.3s linear 0.03s;
       animation-delay: 0.1s;
       animation-fill-mode: forwards;
     }
     .main-body {
-      animation: main-body-fill 0.3s 0.05s linear;
+      animation: main-body-fill 0.3s 0.06s linear;
+      animation-delay: 0.1s;
       animation-fill-mode: forwards;
     }
     .contour {
-      animation: contour-fill 0.3s 0.06s linear;
+      animation: contour-fill 0.3s 0.07s linear;
+      animation-delay: 0.1s;
       animation-fill-mode: forwards;
     }
-
-    .heart {
-      animation: main-body-fill 0.3s linear 0.1s 1 alternate forwards;
-      animation: contour-fill 0.3s linear 0.1s 1 alternate forwards;
-    }
     .sparks {
-      animation: sparks-fill 0.3s 0.3s ease-in reverse;
+      animation: sparks-fill 0.3s 0.5s ease-in reverse;
     }
 }
 

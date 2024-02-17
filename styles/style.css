@@ -17,7 +17,6 @@
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  gap: 101px;
   width: clamp(375px, 99%, 700px);
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
@@ -57,6 +56,7 @@
   margin-block-start: 100px;
   transition: background-color 0.3s;
   transition-timing-function: ease;
+  margin-block-end: 100px;
 }
 
 .logo-group {
@@ -250,7 +250,7 @@
 .card__icon-button {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: start;
   border: none;
   cursor: pointer;
   background-color: var(--background-color);
