@@ -254,25 +254,7 @@
   border: none;
   cursor: pointer;
   background-color: var(--background-color);
-    
-  .like-icon {
-      .core {
-        fill: var(--core-color-tr);
-        transition: fill 0.3s 0.03s linear;
-      }
-      .main-body {
-        fill: var(--main-body-color-tr);
-        transition: fill 0.3s linear;
-      }
-      .contour {
-        fill: var(--contour-color);
-      }
-      .sparks {
-        fill: var(--sparks-fill-color-tr);
-      }
-    }
   }
-
 
 .card__icon-button:focus {
   border: none;
@@ -284,34 +266,6 @@
   border: 2px solid var(--accent-color);
   border-radius: none;
   transition: border 0.1s ease-in;
-}
-
-.card__icon-button:hover {
-  .like-icon {
-    .core {
-      fill: var(--core-color);
-      transition: fill 0.3s linear;
-    }
-
-    .main-body {
-      fill: var(--main-body-color);
-      transition: fill 0.3s 0.05s linear;
-    }
-  }
-}
-
-.card__icon-button:active {
-  .like-icon {
-    .core {
-      fill: var(--core-color);
-      transition: fill 0.3s linear;
-    }
-
-    .main-body {
-      fill: var(--main-body-color);
-      transition: fill 0.3s 0.05s linear;
-    }
-  }
 }
 
 .button__text {
@@ -414,7 +368,15 @@
   grid-template-rows: min-content max-content;
   max-width: 293px;
   row-gap: 30px;
-  align-content: center;
+  align-items: center;
+}
+
+.dialog__floppy {
+  position: relative;
+  z-index: 1;
+  block-size: 39px;
+  inline-size: auto;
+  justify-self: center;
 }
 
 .dialog__button {
