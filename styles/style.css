@@ -262,10 +262,10 @@
 }
 
 .card__icon-button:focus-visible {
-  border: none;
-  outline: 2px solid var(--accent-color);
+  outline: none;
+  border: 2px solid var(--accent-color);
   border-radius: none;
-  transition: outline 0.1s ease-in;
+  transition: border 0.1s ease-in;
 }
 
 .button__text {
